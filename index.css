@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    background-position: center 0;
+    background-image: url(../img/f1_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.yun img{
+    position: absolute;
+}
+.yun :first-child{
+    left: 600px;
+    top: 20px;
+    animation: yun1 2s linear infinite alternate;
+}
+
+.yun :nth-child(2){
+    left: 1300px;
+    top: 40px;
+    animation: yun2 2.5s linear infinite alternate;
+}
+
+.yun :nth-child(3){
+    left: 450px;
+    top: 200px;
+    animation: yun3 2.5s linear infinite alternate;
+}
+
+@keyframes yun1{
+    to{
+        left: 550px;
+    }
+}
+@keyframes yun2{
+    to{
+        left: 1350px;
+    }
+}
+@keyframes yun3{
+    to{
+        left: 400px;
+    }
+}
+
+.san img{
+    position: absolute;
+    left: 550px;
+    top: 200px;
+    animation: san 2s linear infinite alternate;
+}
+@keyframes san{
+    to{
+        top: 150px;
+    }
+}
+
+.biao img{
+    position: absolute;
+    height: 120px;
+    bottom: 75px;
+}
+.biao :nth-child(1){
+    left: 550px;
+    animation: biao 1s linear infinite alternate;
+}
+.biao :nth-child(2){
+    left: 780px;
+    animation: biao 1s linear 0.2s infinite alternate;
+}
+.biao :nth-child(3){
+    left: 1030px;
+    animation: biao 1s linear 0.4s infinite alternate;
+}
+.biao :nth-child(4){
+    left: 1280px;
+    animation: biao 1s linear 0.6s infinite alternate;
+}
+@keyframes biao{
+    to{
+        transform: translateY(-30px);
+    }
+}
